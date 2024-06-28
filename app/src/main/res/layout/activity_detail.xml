@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="#FBFBFB"
+    >
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_arrow_back_left"
+        />
+
+    <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/kopi1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <View
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="456dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/detail_judul"
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="480dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="Cà phê Arabica"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail_harga"
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="510dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="VND. 50.000"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="540dp"
+            android:background="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/ulas"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="544dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="4.8 (1.3K Đánh giá)"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="580dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="Mô tả"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/penilaian"
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="580dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="Đánh giá"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_desc"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="620dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="Cà phê arabica được biết đến như cà phê Arab là một loài thuộc chi Coffea. Loài này được cho là loài cà phê đầu tiên được trồng và là giống chủ đạo."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="325dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="750dp"
+            android:backgroundTint="@color/coklat_soft"
+            android:text="Thêm vào giỏ hàng"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </FrameLayout>
+</RelativeLayout>

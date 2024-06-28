@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="5dp"
+        android:text="Đơn hàng 1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        
+        android:id="@+id/tv_order_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_title"
+        android:layout_marginStart="38dp"
+        android:text="Phí vận chuyển"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_title"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="38dp"
+        android:layout_toRightOf="@id/tv_order_ship"
+        
+        android:gravity="right"
+        android:text="VND 10000"
+        android:textColor="@color/black" />
+
+    <TextView
+        
+        android:id="@+id/pesanan_tv_total"
+        android:layout_below="@id/tv_order_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="Tổng cộng"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        
+        android:id="@+id/pesanan_ed_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_ship"
+        android:layout_marginEnd="38dp"
+        android:layout_toRightOf="@id/tv_order_ship"
+        android:gravity="right"
+        android:text="VND 100000"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/pesanan_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pesanan_tv_total"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="3dp"
+        android:text="Trạng thái: Đang giao hàng"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pesanan_status"
+        android:layout_marginTop="20dp"
+        android:background="@color/underline" />
+
+</RelativeLayout>

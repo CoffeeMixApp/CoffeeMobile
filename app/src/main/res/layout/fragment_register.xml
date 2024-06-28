@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegisterFragment">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="75dp"
+        
+        android:gravity="center"
+        android:text="Tạo Tài Khoản Của Bạn"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- Phụ đề -->
+    <TextView
+        android:id="@+id/register_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_title"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        
+        android:gravity="center"
+        android:text="Hãy sẵn sàng để làm mix coffee theo phong cách riêng của bạn."
+        android:textColor="@color/barn_red"
+        android:textSize="20sp" />
+
+    <!-- Khối Linear cho các trường nhập -->
+    <LinearLayout
+        android:id="@+id/register_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_sub_title"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        android:orientation="vertical">
+
+        <!-- Ô nhập Họ và Tên -->
+        <EditText
+            android:id="@+id/register_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/ic_account_copper"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            
+            android:hint="Họ và Tên"
+            android:inputType="text" />
+
+        <!-- Ô nhập Tên người dùng -->
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/ic_account_copper"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            
+            android:hint="Tên người dùng"
+            android:inputType="text" />
+
+        <!-- Ô nhập Email -->
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/ic_account_copper"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Ô nhập Mật khẩu -->
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:drawableLeft="@drawable/ic_account_copper"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <!-- Nút Đăng ký -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button_register"
+        style="@style/ButtonCoklat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_linear1"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        
+        android:text="ĐĂNG KÝ"
+        android:textSize="17sp" />
+
+</RelativeLayout>
